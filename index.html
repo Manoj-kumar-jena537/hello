@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkbox v/s radio button</title>
+</head>
+<body>
+    <form action="/server">
+        <input type="checkbox"id="age"name="age"/>
+    <label for="age">age is 18+</label>
+    <button>submit</button>
+    <hr>
+    my course subject is-
+    <input type="checkbox"id="math"name="subject"value="math">
+    <label for="math">math</label>
+    <input type="checkbox"id="physics"name="subject"value="physics">
+    <label for="physics">physics</label>
+    <input type="checkbox"id="chemistry"name="subject"value="chemistry">
+    <label for="chemistry">chemistry</label>
+    <button>submit</button>
+    </form>
+    <hr>
+    <form action="/server">
+        Select your gender:-
+        <input type="radio"id="male"name="gender"value="male">
+        <label for="male">male</label>
+        <input type="radio"id="female"name="gender"value="female">
+        <label for="female">female</label>
+        <input type="radio"id="other"name="gender"value="other">
+        <label for="other">other</label>
+        <button>submit</button>
+        <hr>
+        <!-- DROP DOWN -->
+        <select name="profession"id="profession">
+            <option>choose</option>
+            <option value="stu">student</option>
+            <option value="dev"selected>developer</option>
+        </select>
+        <hr>
+        <div>
+            <label for="vol">select your volume level:</label>
+            <input type="range"id="vol"name="vol"min="0"max="100"step="10"value="70">
+            <button>submit</button>
+        </div>
+        <hr>
+        <label for="feedback">please give your feedback:</label>
+        <textarea id="feedback"name="feedback"placeholder="write feedback here"></textarea>
+        <button>submit</button>
+    </form>
+
+</body>
+</html>
